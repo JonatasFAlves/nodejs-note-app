@@ -4,17 +4,10 @@ Followign the course "The Complete Node.js Developer Course (2nd Edition)" we ar
 
 <div style="display: flex">
     <img alt="Code" src="./docs/code1.png?raw=true" width="400"/>
-    <img alt="Code" src="./docs/code2.png?raw=true" width="400"/>
+    <img alt="Code" src="./docs/code2.png?raw=true" width="400" height="265.017"/>
     <img alt="Usage" src="./docs/usage1.png?raw=true" width="400"/>
-    <img alt="Usage" src="./docs/usage2.png?raw=true" width="400"/>
+    <img alt="Usage" src="./docs/usage2.png?raw=true" width="400" height="130.867"/>
 </div>
-
-<div style="display: flex">
-    ![Code](./docs/code1.png?raw=true "Notes manipulation")
-    ![Code](./docs/code2.png?raw=true "User help")
-    ![Usage](./docs/usage1.png?raw=true "Listing all notes")
-    ![Usage](./docs/usage2.png?raw=true "User help")
-<div>
 
 ## Getting Started
 
