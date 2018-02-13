@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# playground folder
+playground/
+
+notes-data.json
