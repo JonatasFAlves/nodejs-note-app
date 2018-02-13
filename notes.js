@@ -1,3 +1,10 @@
+// 
+// Notes manipulation methods
+// 
+// ---------------------------
+//
+// Métodos de manipulação das notas
+//
 const fs = require('fs');
 
 const fetchNotes = () => {
