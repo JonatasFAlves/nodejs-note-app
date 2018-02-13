@@ -40,7 +40,12 @@ const readNote = (title) => {
 };
 
 const removeNote = (title) => {
-    console.log('Removing note: ', title);
+    const notes = fetchNotes();
+    const updatedNotes = notes.filter(note => note.title !== title);
+    if(!(notes.length === updatedNotes.length)) {
+        saveNote(updatedNotes);
+        return true;
+    }
 };
 
 
