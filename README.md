@@ -2,10 +2,12 @@
 
 Followign the course "The Complete Node.js Developer Course (2nd Edition)" we are building a simple CLI note app using the nodejs.
 
-![Code](./docs/code1.png?raw=true "Notes manipulation")
-![Code](./docs/code2.png?raw=true "User help")
-![Usage](./docs/usage1.png?raw=true "Listing all notes")
-![Usage](./docs/usage2.png?raw=true "User help")
+<div style="display: flex">
+    <img alt="Code" src="./docs/code1.png?raw=true" width="400"/>
+    <img alt="Code" src="./docs/code2.png?raw=true" width="400" height="265.017"/>
+    <img alt="Usage" src="./docs/usage1.png?raw=true" width="400"/>
+    <img alt="Usage" src="./docs/usage2.png?raw=true" width="400" height="130.867"/>
+</div>
 
 ## Getting Started
 
@@ -15,6 +17,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 NodeJS 9.0+
+
+Git
 
 ### Installing
 
@@ -34,7 +38,7 @@ npm install
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Well if you really want to... i can make a docker image for the project.. lol
 
 ## Built With
 
@@ -51,7 +55,7 @@ The project is only available with the version now.
 
 ## Authors
 
-* **Jonatas Alves** - *Initial work* - [Jonatas Alves](https://github.com/jonatasfalves)
+* **Jonatas Alves** - *Had the work of typing this.. eeww* - [github](https://github.com/jonatasfalves)
 
 Idea from **Andrew Mead** in [The Complete Node.js Developer Course (2nd Edition)](https://www.udemy.com/the-complete-nodejs-developer-course-2).
 
