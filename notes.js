@@ -2,23 +2,31 @@ console.log('Starting notes.js');
 
 const fs = require('fs');
 
+const fetchNotes = () => {
+    try {
+        const notesString = fs.readFileSync('notes-data.json');
+        return JSON.parse(notesString);
+    } catch(err) {
+        return [];
+    }
+}
+
+const saveNote = (notes) => {
+    fs.writeFileSync('notes-data.json', JSON.stringify(notes));
+}
+
 const addNote = (title, body) => {
-    let notes = [];
+    let notes = fetchNotes();
     const note = {
         title, 
         body
     };
     
-    try {
-        const notesString = fs.readFileSync('notes-data.json');
-        notes = JSON.parse(notesString);
-    } catch(err) { }
-    
     const duplicatedNotes = notes.filter(note => note.title === title);
     
     if(!duplicatedNotes.length) {
         notes.push(note);
-        fs.writeFileSync('notes-data.json', JSON.stringify(notes));
+        saveNote(notes);
     }
 };
 
