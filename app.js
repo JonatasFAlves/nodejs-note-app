@@ -11,7 +11,36 @@ const notes = require('./notes');
 // Mapeando input do usuário:
 //   argv será uma constante com acesso ao input completo do usuário
 //   command será usada para ler o comando principal do usuário
-const argv = yargs.argv;
+const argv = yargs
+    .command('add', 'Add a new note', {
+        title: {
+            description: 'Title of the note',
+            demand: true,
+            alias: 't'
+        },
+        body: {
+            description: 'The text of the note',
+            demand: true,
+            alias: 'b'
+        }
+    })
+    .command('list', 'List all notes')
+    .command('read', 'Read a specific note', {
+        title: {
+            description: 'Title of the note',
+            demand: true,
+            alias: 't'
+        }
+    })
+    .command('remove', 'Remove a specific note', {
+        title: {
+            description: 'Title of the note to be removed',
+            demand: true,
+            alias: 't'
+        }
+    })
+    .help()
+    .argv;
 const command = argv._[0];
 
 if(command === 'add') {
